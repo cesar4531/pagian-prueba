@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--estilos de botones-->
+ 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet"> 
+
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <title>prueba</title>
+        <!--Custom CSS-->
+        <link rel="stylesheet" href="Style.css">
+        <link rel="stylesheet" href="uno.css">
+        <link rel="stylesheet" href="dos.css">
+        <link rel="stylesheet" href="tres.css">
+        <link rel="stylesheet" href="cuatro.css">
+        <link rel="stylesheet" href="cinco.css">
+</head>
+<body>
+    <header class="header">
+        <div class="logo-header">
+            <img src="img/axolotlsW.jpg" alt="">
+        </div>
+        <nav class="nav-menu">
+            <ul>
+                <li><a href="#">Inicio</a></li>
+                <li><a href="http://127.0.0.1:5500/pagina%20web/">Quien soy</a></li>
+                <li><a href="#">servicio</a></li>
+                <li><a href="#">contactos</a></li>
+            </ul>
+        </nav>
+    </header>
+        <!--Aquie empieza el pana pinguino-->
+        
+    <header class = "bg_animate">
+
+        <section class="banner contenedor">
+            <secrion class="banner_title">
+                <h2>Hola mi nombre <br> es Zack</h2>
+                <a href="http://127.0.0.1:5500/pagian%20web%20xd/index.html" class="llamanos">Conozcamonos</a>
+            </secrion>
+            <div class="banner_img">
+                <img src="pinguinito.png" alt="">
+            </div>
+        </section>
+        <div class="burbujas">
+            <div class="burbuja"></div>
+            <div class="burbuja"></div>
+            <div class="burbuja"></div>
+            <div class="burbuja"></div>
+            <div class="burbuja"></div>
+            <div class="burbuja"></div>
+        </div>
+    </header>
+    <!--Esta divide las secciones-->
+    <hr>
+        <div class = "container-all">
+            <h3>Por Favor Escoga la clase<br> en el que se encuentre</h3>
+        </div>
+    
+
+    <br>
+    <!--Aqui empieza el boton en css-->
+    <div class="contenedor">
+        
+		<div class="contenedor-botones">
+			
+            <button class="boton-uno"><span>1°A Boton</span></button>
+            <button class="boton-dos"><span>1°B Boton</span></button>
+            <button class="boton-tres"><a href="http://127.0.0.1:5500/2%C2%B0A/"> <span>2°A Boton </span></a></button>
+            <button class="boton-cuatro"><span>3°A Boton</span></button>
+            <button class="boton-cinco"><span>3°B Boton</span></button>
+		</div>
+	</div>
+
+    <br>
+   
+       
+        
+    <article>
+        
+        <div class="prueba">
+            <div class = "container-all">
+                <h3>Por Favor Escoga la clase<br> en el que se encuentre</h3>
+            </div>
+            <br><br><br><br><br><br><br><br><br><br>
+            <div class="btn">
+                <br><br><br><br><br><br><br><br><br><br>
+                <div class="play"></div>
+                <p>Play Video</p>
+            </div>
+            <div class="clip">
+                <video src="Brezzeblocks X Take A Slice - Sub Español.mp4" controls></video>
+                <b class ="close">Close</b>
+            </div>
+            <script>
+                let btn =  document.querySelector('.btn');
+                let clip = document.querySelector('.clip');
+                let close = document.querySelector('.close');
+                let video = document.querySelector('video');
+                btn.onclick = function(){
+                    btn.classList.add('active');
+                    clip.classList.add('active');
+                    video.play();
+                    video.currentTime = 0;
+                }
+                close.onclick = function(){
+                    btn.classList.remove('active');
+                    clip.classList.remove('active');
+                    video.pause();
+                }
+            </script>
+            <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+        </div>
+        <br><br><br><br><br><br><br><br><br><br>
+    </article>
+    <article>
+        <br
+        <div class="hero">
+            <h1>Pinguino</h1>
+        </div>
+        <div class="container">
+            <div class="evento">
+                <div class="foto" data-aos="fade-up">
+                    <img src="pregunta.png" alt="">
+                </div>
+                <h3 class="fecha">Nosotros te ayudaremos para las dudas<br> que tengas acerca de la escuela</h3>
+            </div>
+            <div class="evento">
+                <div class="foto" data-aos="fade-down">
+                    <img src="./img/estudios.png" alt="">
+                </div>
+                <h3 class="fecha">Te apoyaremos para que puedas terminar tus estudios con exito</h3>
+            </div>
+            <div class="evento">
+                <div class="foto" data-aos="fade-left">
+                    <img src="./img/materias.png" alt="">
+                </div>
+                <h3 class="fecha">te apoyaremos en todas las materias si es que hace falta la tarea</h3>
+            </div>
+            <div class="evento">
+                <div class="foto" data-aos="fade-right">
+                    <img src="./img/viaje.png" alt="">
+                </div>
+                <h3 class="fecha">¡seremos tus guias durante este gran viaje!</h3>
+            </div>
+        </div>
+    
+    
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script>
+            AOS.init({
+                duration: 1000,
+                once: true
+            });
+        </script>
+        
+    </article>
+
+
+<!--Aqui empieza el footer-->
+<br>
+<footer>
+
+    <div class="container__footer">
+        <div class="box__footer">
+            <div class="logo">
+                <img src="Images/jajaja.jpg" alt="">
+            </div>
+            
+        </div>
+        
+
+        <div class="box__footer">
+            <h2>Compañia</h2>
+            <a href="#">Acerca de</a>
+            <a href="#">Trabajos</a>
+            <a href="#">Procesos</a>
+            <a href="#">Servicios</a>              
+        </div>
+
+        <div class="box__footer">
+            <h2>Redes Sociales</h2>
+            <a href="#"> <i class="fab fa-facebook-square"></i> Facebook</a>
+            <a href="#"><i class="fab fa-twitter-square"></i> Twitter</a>
+            <a href="#"><i class="fab fa-linkedin"></i> Linkedin</a>
+            <a href="#"><i class="fab fa-instagram-square"></i> Instagram</a>
+        </div>
+
+    </div>
+
+    <div class="box__copyright">
+        <hr>
+        <p>Todos los derechos reservados © 2021 <b>MagtimusPro</b></p>
+    </div>
+</footer>
+</body>
+</html>
